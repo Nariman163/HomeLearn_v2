@@ -5,7 +5,8 @@ public class CyclesLearn {
         //System.out.println(reverseString("Marina"));
         //System.out.println(reverseStringEnd("Nariman"));
         //System.out.println(filterString("Test",'t'));
-        System.out.println(makeItFunny("Test make", 3));
+        //System.out.println(makeItFunny("Test make", 3));
+        System.out.println(hasChar("Test", 'T'));
     }
 
     //Переворот строки, перебор с первого символа
@@ -18,13 +19,14 @@ public class CyclesLearn {
         }
         return result;
     }
+
     //Реализуйте такой же метод reverse(), но выполняющий обход строки не с первого элемента по последний, а наоборот, от последнего к первому.
     public static String reverseStringEnd(String str) {
         var i = str.length() - 1;
         var result = "";
         while (i >= 0) {
             result = result + str.charAt(i);
-            i-=1;
+            i -= 1;
         }
         return result;
     }
@@ -48,7 +50,7 @@ public class CyclesLearn {
         var result = "";
         while (i < str.length()) {
 
-            if((i + 1) % n == 0) {
+            if ((i + 1) % n == 0) {
                 result = result + Character.toUpperCase(str.charAt(i));
             } else {
                 result = result + str.charAt(i);
@@ -57,4 +59,21 @@ public class CyclesLearn {
         }
         return result;
     }
+
+    //Реализуйте статический метод App.hasChar(), который проверяет (с учётом регистра), содержит ли строка указанную букву.
+    //Метод принимает два параметра:
+    //Строка
+    //Буква для поиска
+    public static boolean hasChar(String str, char ch) {
+        var i = 0;
+        while (i < str.length()) {
+            if (str.charAt(i) == ch)
+            {
+                return true;
+            }
+            i++;
+        }
+        return false;
+    }
+
 }
