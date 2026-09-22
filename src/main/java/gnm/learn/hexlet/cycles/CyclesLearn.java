@@ -6,7 +6,10 @@ public class CyclesLearn {
         //System.out.println(reverseStringEnd("Nariman"));
         //System.out.println(filterString("Test",'t'));
         //System.out.println(makeItFunny("Test make", 3));
-        System.out.println(hasChar("Test", 'T'));
+        //System.out.println(hasChar("Test", 'T'));
+        //System.out.println(reverseStringFor("Test"));
+        // System.out.println(encript("attack"));
+        System.out.println(compress("aaabcccc"));
     }
 
     //Переворот строки, перебор с первого символа
@@ -67,8 +70,7 @@ public class CyclesLearn {
     public static boolean hasChar(String str, char ch) {
         var i = 0;
         while (i < str.length()) {
-            if (str.charAt(i) == ch)
-            {
+            if (str.charAt(i) == ch) {
                 return true;
             }
             i++;
@@ -76,4 +78,69 @@ public class CyclesLearn {
         return false;
     }
 
+    //Переворот строки с помощью FOR
+    public static String reverseStringFor(String str) {
+        var result = "";
+        for (var i = 0; i < str.length(); i++) {
+            result = str.charAt(i) + result;
+        }
+        return result;
+    }
+
+    //Сэмвелл обнаружил, что его сообщения перехватываются в замке «Близнецы» и там читаются. Из-за этого их атаки перестали быть внезапными.
+    //Немного подумав, он разработал программу, которая бы шифровала сообщения по следующему алгоритму.
+    //Она бы брала текст и переставляла в нем каждые два подряд идущих символа.
+    //Реализуйте статический метод App.encrypt(), который принимает на вход исходное сообщение и возвращает зашифрованное.
+    //Пример
+    // App.encrypt("move"); // "omev"
+    //App.encrypt("attack"); // "taatkc"
+
+    /// / Если число символов нечётное
+    /// / то последний символ остается на своем месте
+    public static String encript(String str) {
+        var result = "";
+        for (var i = 0; i < str.length(); i += 2) {
+            if (i + 1 < str.length()) {
+                result = result + str.charAt(i + 1) + str.charAt(i);
+            } else
+                result = result + str.charAt(i);
+        }
+        return result;
+    }
+
+    //Реализуйте метод compress(), который сжимает строку методом RLE (Run-Length Encoding).
+    //Алгоритм такой: если символ повторяется несколько раз подряд, он заменяется на сам символ и количество повторений.
+    // Одиночные символы записываются без цифры.
+    //
+    //App.compress("aaabcccc"); // => "a3bc4"
+    //App.compress("abcd");      // => "abcd"
+    //App.compress("aabbaa");    // => "a2b2a2"
+    //App.compress("");          // => ""
+    //Подсказки:
+    //
+    //идите по строке и считайте, сколько одинаковых символов идет подряд;
+    //как только символ меняется, дописывайте предыдущий символ и его счетчик (если он больше единицы), а счетчик сбрасывайте;
+    //не забудьте обработать последнюю группу символов после завершения цикла;
+    //если что-то идет не так, добавьте отладочную печать значений i, текущего символа и счетчика — это поможет увидеть, где ломается логика.
+    public static String compress(String str) {
+        var result = "";
+        var count = 1;
+        for (var i = 1; i < str.length(); i++) {
+            if (str.charAt(i) == str.charAt(i - 1)) {
+                count++;
+            } else {
+                result = result + str.charAt(i - 1);
+                if (count > 1) {
+                    result = result + count;
+                }
+                count = 1;
+            }
+            }
+        result = result + str.charAt(str.length() - 1);
+        if (count > 1) {
+            result = result + count;
+
+        }
+        return result;
+    }
 }
