@@ -1,0 +1,14 @@
+Context.md
+  h_de73fe7ce70ffd 1-66
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5-gigacode.3",
+  "base_commit_sha": "0f595ce4f7b9f540c60e7bf33e5a4d63e813e41d",
+  "prompts": {},
+  "humans": {
+    "h_de73fe7ce70ffd": {
+      "author": "Nariman163 <nariman.gumerov@mail.ru>"
+    }
+  }
+}
