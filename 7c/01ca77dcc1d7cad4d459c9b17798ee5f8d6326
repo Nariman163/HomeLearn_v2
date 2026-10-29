@@ -1,0 +1,156 @@
+src/main/java/gnm/learn/AiExercise/ControlFlowInput.java
+  s_d46c276a27654e::t_2658330bf8de90 38
+  s_e645b39d5ed37e::t_1f836ce205172b 29
+  s_4b7c1293cac04e::t_bde850f5d6075f 34
+  s_c1ddf8990849f3::t_d5b236aad3b658 47
+  s_62c3d558bef1f4::t_514e88064a88a0 20
+  s_0cdf14f734f71e::t_4c012469505da0 17
+  s_8477e1c9d39792::t_ed6cd531408aab 36
+  s_f4b21eccbce14b::t_4b37be2e0c2a34 30
+  s_297793138d9726::t_a172fa26b067e4 16
+  s_013abadb815e15::t_a869ac61a7d29c 27
+  s_bf612a35e8449e::t_44bef6d029489f 12
+  s_e712bd1551162b::t_5536582c93a2d2 14
+  s_c517f722371862::t_1aa5994306f5e4 23
+  s_d6086285710331::t_1dfa1456602d12 28
+  s_7320e4a811688e::t_b5fdde7a3009a8 45-46
+  s_016d5606128e57::t_0fd4ad3aaffae5 43,48
+  s_bf612a35e8449e::t_999f4531f80db0 9-11
+  s_016d5606128e57::t_92e0f3eb7e6f51 49
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5-gigacode.3",
+  "base_commit_sha": "7c01ca77dcc1d7cad4d459c9b17798ee5f8d6326",
+  "prompts": {},
+  "sessions": {
+    "s_013abadb815e15": {
+      "agent_id": {
+        "tool": "gigacode_jb_tab",
+        "id": "ai_tab-d21618cc-16d9-4a74-bf11-3aa83162bff1",
+        "model": "Gigacode-Inline-13B-v4.1"
+      },
+      "human_author": "Nariman163 <nariman.gumerov@mail.ru>"
+    },
+    "s_016d5606128e57": {
+      "agent_id": {
+        "tool": "gigacode_jb_tab",
+        "id": "ai_tab-09391f7e-640d-447d-98b7-32b9deb40c39",
+        "model": "Gigacode-Inline-13B-v4.1"
+      },
+      "human_author": "Nariman163 <nariman.gumerov@mail.ru>"
+    },
+    "s_0cdf14f734f71e": {
+      "agent_id": {
+        "tool": "gigacode_jb_tab",
+        "id": "ai_tab-e203b394-3bc5-4c20-a972-d0e1fa942e69",
+        "model": "Gigacode-Inline-13B-v4.1"
+      },
+      "human_author": "Nariman163 <nariman.gumerov@mail.ru>"
+    },
+    "s_297793138d9726": {
+      "agent_id": {
+        "tool": "gigacode_jb_tab",
+        "id": "ai_tab-4382f85a-4402-40d9-87c8-1d8bea15f112",
+        "model": "Gigacode-Inline-13B-v4.1"
+      },
+      "human_author": "Nariman163 <nariman.gumerov@mail.ru>"
+    },
+    "s_4b7c1293cac04e": {
+      "agent_id": {
+        "tool": "gigacode_jb_tab",
+        "id": "ai_tab-58ee6699-0cf9-4cea-90de-7972fe998f87",
+        "model": "Gigacode-Inline-13B-v4.1"
+      },
+      "human_author": "Nariman163 <nariman.gumerov@mail.ru>"
+    },
+    "s_62c3d558bef1f4": {
+      "agent_id": {
+        "tool": "gigacode_jb_tab",
+        "id": "ai_tab-07014add-2409-4aed-bc1b-1e4dc9404a51",
+        "model": "Gigacode-Inline-13B-v4.1"
+      },
+      "human_author": "Nariman163 <nariman.gumerov@mail.ru>"
+    },
+    "s_7320e4a811688e": {
+      "agent_id": {
+        "tool": "gigacode_jb_tab",
+        "id": "ai_tab-b2e9e9ee-fba9-401f-8bd0-642f38cfe9ed",
+        "model": "Gigacode-Inline-13B-v4.1"
+      },
+      "human_author": "Nariman163 <nariman.gumerov@mail.ru>"
+    },
+    "s_8477e1c9d39792": {
+      "agent_id": {
+        "tool": "gigacode_jb_tab",
+        "id": "ai_tab-ae6cc49b-09a1-4793-9f6b-9aecab4f2838",
+        "model": "Gigacode-Inline-13B-v4.1"
+      },
+      "human_author": "Nariman163 <nariman.gumerov@mail.ru>"
+    },
+    "s_bf612a35e8449e": {
+      "agent_id": {
+        "tool": "gigacode_jb_tab",
+        "id": "ai_tab-664437d9-bb37-4edb-bbfe-99b6bd22006c",
+        "model": "Gigacode-Inline-13B-v4.1"
+      },
+      "human_author": "Nariman163 <nariman.gumerov@mail.ru>"
+    },
+    "s_c1ddf8990849f3": {
+      "agent_id": {
+        "tool": "gigacode_jb_tab",
+        "id": "ai_tab-b6be9289-253b-4876-9aa0-54444285ef2e",
+        "model": "Gigacode-Inline-13B-v4.1"
+      },
+      "human_author": "Nariman163 <nariman.gumerov@mail.ru>"
+    },
+    "s_c517f722371862": {
+      "agent_id": {
+        "tool": "gigacode_jb_tab",
+        "id": "ai_tab-afcffe0c-9898-436c-b87a-fcd2a02465bc",
+        "model": "Gigacode-Inline-13B-v4.1"
+      },
+      "human_author": "Nariman163 <nariman.gumerov@mail.ru>"
+    },
+    "s_d46c276a27654e": {
+      "agent_id": {
+        "tool": "gigacode_jb_tab",
+        "id": "ai_tab-8710fa54-5e2e-4328-8e39-3ce6c3539619",
+        "model": "Gigacode-Inline-13B-v4.1"
+      },
+      "human_author": "Nariman163 <nariman.gumerov@mail.ru>"
+    },
+    "s_d6086285710331": {
+      "agent_id": {
+        "tool": "gigacode_jb_tab",
+        "id": "ai_tab-8a38aefa-ebe8-4d66-9a5d-10d80e076e2e",
+        "model": "Gigacode-Inline-13B-v4.1"
+      },
+      "human_author": "Nariman163 <nariman.gumerov@mail.ru>"
+    },
+    "s_e645b39d5ed37e": {
+      "agent_id": {
+        "tool": "gigacode_jb_tab",
+        "id": "ai_tab-8457bd37-384b-4af0-a701-62bb8f921aa6",
+        "model": "Gigacode-Inline-13B-v4.1"
+      },
+      "human_author": "Nariman163 <nariman.gumerov@mail.ru>"
+    },
+    "s_e712bd1551162b": {
+      "agent_id": {
+        "tool": "gigacode_jb_tab",
+        "id": "ai_tab-fe9b2397-3d29-4511-99ce-671b50d1a969",
+        "model": "Gigacode-Inline-13B-v4.1"
+      },
+      "human_author": "Nariman163 <nariman.gumerov@mail.ru>"
+    },
+    "s_f4b21eccbce14b": {
+      "agent_id": {
+        "tool": "gigacode_jb_tab",
+        "id": "ai_tab-77a840b6-0eec-40f1-849f-eb89a1abec5a",
+        "model": "Gigacode-Inline-13B-v4.1"
+      },
+      "human_author": "Nariman163 <nariman.gumerov@mail.ru>"
+    }
+  }
+}
