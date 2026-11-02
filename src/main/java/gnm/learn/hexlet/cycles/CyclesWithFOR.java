@@ -30,8 +30,10 @@ public class CyclesWithFOR {
      В return указывается только переменная с массивом
      */
 
-    public static String[] addPrefix(String prefix){
-        String[] newString = new String[];
-
+    public static String[] addPrefix(String[] names, String prefix){
+        String[] newString = new String[names.length];
+        for (int i = 0; i < names.length;i++) {
+            newString[i] = prefix + " " + names[i];
+        } return newString;
     }
 }
