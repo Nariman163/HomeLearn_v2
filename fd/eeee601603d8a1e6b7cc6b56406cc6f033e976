@@ -1,0 +1,14 @@
+src/main/java/gnm/learn/hexlet/massive/MassiveLearn.java
+  h_de73fe7ce70ffd 47-72
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5-gigacode.3",
+  "base_commit_sha": "fdeeee601603d8a1e6b7cc6b56406cc6f033e976",
+  "prompts": {},
+  "humans": {
+    "h_de73fe7ce70ffd": {
+      "author": "Nariman163 <nariman.gumerov@mail.ru>"
+    }
+  }
+}
