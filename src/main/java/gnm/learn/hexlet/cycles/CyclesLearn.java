@@ -2,7 +2,7 @@ package gnm.learn.hexlet.cycles;
 
 public class CyclesLearn {
     public static void main(String[] args) {
-        //System.out.println(reverseString("Marina"));
+        System.out.println(reverseString("Marina"));
         //System.out.println(reverseStringEnd("Nariman"));
         //System.out.println(filterString("Test",'t'));
         //System.out.println(makeItFunny("Test make", 3));
@@ -47,7 +47,8 @@ public class CyclesLearn {
         return result;
     }
 
-    //Реализуйте статический метод App.makeItFunny(), который принимает на вход строку и возвращает её копию, у которой каждый n-ный элемент переведен в верхний регистр. n – задается на входе в функцию. Для определения каждого n-ного элемента понадобится остаток от деления %. Подумайте, как его можно использовать.
+    //Реализуйте статический метод App.makeItFunny(), который принимает на вход строку и возвращает её копию, у которой каждый n-ный элемент переведен в верхний регистр.
+    // n – задается на входе в функцию. Для определения каждого n-ного элемента понадобится остаток от деления %. Подумайте, как его можно использовать.
     public static String makeItFunny(String str, int n) {
         var i = 0;
         var result = "";

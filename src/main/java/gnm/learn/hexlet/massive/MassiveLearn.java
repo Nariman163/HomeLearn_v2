@@ -6,6 +6,7 @@ import java.util.Arrays;
 public class MassiveLearn {
     public static void main(String[] args) {
         System.out.println(Arrays.toString(getWeekends("short")));
+        System.out.println(Arrays.toString(getWeekendsIf("long")));
     }
     //Допишите публичный статический метод getWeekends(), который возвращает массив из двух элементов – названий выходных дней на английском.
     // Метод принимает на вход параметр – формат возврата в виде строки. Всего есть два возможных значения:
@@ -33,6 +34,20 @@ public class MassiveLearn {
                 return longWeekends;
         }
     }
+    //РЕШЕНИЕ ЧЕРЕЗ IF
+    public static String[] getWeekendsIf(String format) {
+        String[] longWeekendsIf = {"saturday", "sunday"};
+        String[] shortWeekendsIf = {"sat", "sun"};
+        if (format.equals("long")) {
+            return longWeekendsIf;
+        } else if (format.equals("short")){
+            return shortWeekendsIf;
+        } else {
+            return longWeekendsIf;
+        }
+
+    }
+
 
 
 }
