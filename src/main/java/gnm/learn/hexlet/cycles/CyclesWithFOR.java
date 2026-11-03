@@ -31,9 +31,33 @@ public class CyclesWithFOR {
      */
 
     public static String[] addPrefix(String[] names, String prefix){
-        String[] newString = new String[names.length];
+        var length = names.length;
+        String[] newString = new String[length];
         for (int i = 0; i < names.length;i++) {
             newString[i] = prefix + " " + names[i];
         } return newString;
     }
+    /*
+    Реализуйте в файле src/main/java/io/hexlet/App.java публичный статический метод calculateSum(), который
+    принимает в качестве аргумента массив целых чисел. Метод высчитывает и возвращает сумму всех элементов
+    массива, которые делятся без остатка на 3 (три). В случае пустого массива метод должен вернуть 0.
+
+    int[] numbers = {8, 9, 21, 19, 18, 22, 7};
+    App.calculateSum(numbers); // 48
+    Подсказки:
+    Число делится на три без остатка, когда остаток от деления на три равен нулю, то есть value % 3 == 0
+     */
+    public static Integer calculateSum(int[] numbers) {
+        if (numbers.length ==0) {
+            return 0;
+        }
+        var sum = 0;
+        var devider = 3;
+        for (var i = 0; i < numbers.length; i++) {
+            if (numbers[i] % devider ==0)
+            sum+=numbers[i];
+        }
+        return sum;
+    }
+
 }
